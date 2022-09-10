@@ -21,8 +21,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://your-solution-url.com
-- Live Site URL: https://your-live-site-url.com
+- Solution URL: https://www.frontendmentor.io/solutions/testimonials-grid-section-nmByU2283Z
+- Live Site URL: https://testimonial-grid-solution.netlify.app/
 
 ## My process
 
@@ -44,13 +44,13 @@ Users should be able to:
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/VEN-github/testimonials-grid-section-main.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd my-project
+  cd testimonials-grid-section-main
 ```
 
 Install dependencies
