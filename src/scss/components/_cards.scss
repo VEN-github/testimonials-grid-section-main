@@ -1,0 +1,103 @@
+@use '../abstracts/' as *;
+@use './media' as *;
+
+.card {
+  margin-bottom: 1.5rem;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 48px 100px 0px rgba(17, 12, 46, 0.15);
+
+  &--bg {
+    &-violet {
+      background-color: $moderate-violet;
+      background-image: url('../assets/images/bg-pattern-quotation.svg');
+      background-repeat: no-repeat;
+      background-position: top right 30px;
+      color: $white;
+    }
+
+    &-grayish-blue {
+      background-color: $very-dark-grayish-blue;
+      color: $white;
+    }
+
+    &-white {
+      background-color: $white;
+      color: darken($white, 80%);
+    }
+
+    &-blackish-blue {
+      background-color: $very-dark-blackish-blue;
+      color: $white;
+    }
+  }
+
+  #{&}__header {
+    @include flex(flex, flex-start, center);
+    margin-bottom: 1rem;
+  }
+
+  &__img {
+    width: 40px;
+    height: 40px;
+    margin-right: 1rem;
+    border-radius: 50%;
+
+    &--border {
+      border: 2px solid $moderate-violet;
+
+      &-violet {
+        border-color: lighten($moderate-violet, 20%);
+      }
+    }
+  }
+
+  &__title {
+    font-size: 0.938rem;
+  }
+
+  &__subtitle {
+    opacity: 0.5;
+  }
+
+  &__body {
+    margin-bottom: 1.25rem;
+    font-size: 1.5rem;
+    font-weight: weight(semibold);
+    line-height: 1.3;
+  }
+
+  &__quote {
+    font-weight: weight(medium);
+    opacity: 0.7;
+  }
+}
+
+@include md {
+  .card {
+    margin-bottom: 0;
+
+    &--bg {
+      &-violet {
+        grid-column: 1 / 3;
+        background-position: top right 100px;
+      }
+
+      &-grayish-blue {
+        grid-column: 3 / 4;
+      }
+
+      &-blackish-blue {
+        grid-area: 2 / 2 / 3 / 4;
+      }
+    }
+
+    &--c {
+      grid-area: 2 / 1 / 3 / 2;
+    }
+
+    &--e {
+      grid-area: 1 / 4 / 3 / 5;
+    }
+  }
+}

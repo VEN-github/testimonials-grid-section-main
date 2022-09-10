@@ -1,26 +1,38 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="app-container">
+    <div class="testimonials"><CardA /><CardB /><CardC /><CardD /><CardE /></div>
+    <div class="attribution">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        href="https://www.frontendmentor.io/profile/VEN-github"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Raven Barrogo</a
+      >.
+    </div>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import CardA from './components/CardA.vue';
+import CardB from './components/CardB.vue';
+import CardC from './components/CardC.vue';
+import CardD from './components/CardD.vue';
+import CardE from './components/CardE.vue';
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    CardA,
+    CardB,
+    CardC,
+    CardD,
+    CardE,
+  },
+};
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

@@ -1,0 +1,48 @@
+@use './typography' as *;
+@use '../abstracts' as *;
+@use '../components/media' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  @extend *;
+}
+
+body {
+  font-family: $font-stack;
+  font-size: 0.813rem;
+  line-height: 1.6;
+  background-color: $light-grayish-blue;
+}
+
+.app-container {
+  max-width: $xl;
+  margin: 5rem auto;
+  padding: 0 2rem;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.attribution {
+  text-align: center;
+
+  & a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+@include md {
+  .testimonials {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-bottom: 2rem;
+  }
+}

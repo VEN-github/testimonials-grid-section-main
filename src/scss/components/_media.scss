@@ -1,0 +1,7 @@
+@use '../abstracts' as *;
+
+@mixin md {
+  @media screen and (min-width: $md) {
+    @content;
+  }
+}
