@@ -44,13 +44,13 @@ Users should be able to:
 Clone the project
 
 ```bash
-  git clone https://github.com/VEN-github/testimonials-grid-section-main.git
+git clone https://github.com/VEN-github/testimonials-grid-section-main.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd testimonials-grid-section-main
+cd testimonials-grid-section-main
 ```
 
 Install dependencies
