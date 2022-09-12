@@ -1,5 +1,5 @@
 <template>
-  <div class="app-container">
+  <main class="app-container">
     <div class="testimonials"><CardA /><CardB /><CardC /><CardD /><CardE /></div>
     <div class="attribution">
       Challenge by
@@ -16,7 +16,7 @@
         >Raven Barrogo</a
       >.
     </div>
-  </div>
+  </main>
 </template>
 
 <script>
