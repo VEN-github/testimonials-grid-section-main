@@ -3,7 +3,7 @@
     <div class="card__header">
       <img src="../assets/images/image-kira.jpg" alt="Testimonial image" class="card__img" />
       <div>
-        <p class="card__title">Kira Whittle</p>
+        <h5 class="card__title">Kira Whittle</h5>
         <p class="card__subtitle">Verified Graduate</p>
       </div>
     </div>

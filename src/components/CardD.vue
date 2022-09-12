@@ -7,7 +7,7 @@
         class="card__img card__img--border"
       />
       <div>
-        <p class="card__title">Patrick Abrams</p>
+        <h5 class="card__title">Patrick Abrams</h5>
         <p class="card__subtitle">Verified Graduate</p>
       </div>
     </div>

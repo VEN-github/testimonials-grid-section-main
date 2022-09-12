@@ -7,7 +7,7 @@
         class="card__img card__img--border card__img--border-violet"
       />
       <div>
-        <p class="card__title">Daniel Clifford</p>
+        <h5 class="card__title">Daniel Clifford</h5>
         <p class="card__subtitle">Verified Graduate</p>
       </div>
     </div>
